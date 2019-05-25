@@ -1,20 +1,20 @@
 
-#### File
+## File
 文件要存储在HDFS中，每个文件切分 成多个一定大小(默认64M)的Block (默认3个备份)存储在多个节点 (DataNode)上  
 
-#### InputFormate
+## InputFormate
 MR的基础类之一  数据分割 （Data Splits） 记录读取器（Record Reader）
 
-#### splite
+## splite
 实际上每个split包含一个Block中开头部分的数据， 解决记录快Block的问题
 
-#### RR  RecordRead
+## RR  RecordRead
 每次读取一条记录 调用一次map函数
 
-####  map
+##  map
 滴啊用一次map 
 
-#### shuffle
+## shuffle
 Partition， Sort， Spill ， Merger ，Combiner ， Copy， Memery ，Disk 。。。  
 神奇的地方 性能优化的重点区域
 
@@ -35,14 +35,14 @@ Partition， Sort， Spill ， Merger ，Combiner ， Copy， Memery ，Disk 。
     合并reduce的输出文件即可得到最终的结 果。                 
 
 
-## Hadoop Streaming
+# Hadoop Streaming
    MapReduce和HDFS采用Java实现，默认提供Java编程接口
    • Streaming框架允许任何语言来实现能在Hadoop MapReduce使用的程
    序
    • Streaming方便已有程序向Hadoop平台移植
    
    
-### 应用
+## 应用
 
 1 数据统计   
 

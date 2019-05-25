@@ -1,11 +1,11 @@
 
 ###
 
-1.0
+1.0  
 jobTracker    master    
 taskTracker   selver   
 
-2.0
+2.0  
 Resource Manager      master   
 ApplicationManager    selver   
 

@@ -1,4 +1,4 @@
-## flume
+# flume
 
 分布式，搞笑收集 汇聚 和 移动  大规模日志信息  
 
@@ -7,11 +7,11 @@
 数据源 cpnsole rpc text tail syslog exec  
 
 
-#### flume 事件
+## flume 事件
  Event ： 专差数据的字节数数组 + 可选头部  
  
 
-#### flume agent 
+## flume agent 
 每个agent 是一个独立的守护进程 jvm container  
 
 agent  : source channel sink    
@@ -26,18 +26,18 @@ agent interceptor   用于source的一组拦截器
 
 agent selector 选择放入到不同的channel  
 
-#### flume 可靠性  
+## flume 可靠性  
 
-#### flume 支持复杂的流动  
-
-
+## flume 支持复杂的流动  
 
 
 
 
 
 
-## kafka
+
+
+# kafka
 linkedin 2010 年 开源的
 
 特点： 

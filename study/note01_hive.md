@@ -1,5 +1,5 @@
 
-## HIVE
+# HIVE
 
 Hive 基于一个统一的查询分析层， 通过sql语句的方式对hsfs得上的数据进行 查询 统计分析  
 
@@ -18,7 +18,7 @@ select word ,count(*) from ( select explode(splite(sentence, ' ')) as word from 
 ```` 
 
 
-##### Hive   和 传统关系数据的 比较
+## Hive   和 传统关系数据的 比较
 
 1 存储的文件系统不一样  
 
@@ -29,7 +29,7 @@ select word ,count(*) from ( select explode(splite(sentence, ' ')) as word from 
 4 hive存储和扩展能力强  
 
 
-#### hive 的架构
+## hive 的架构
 
 1 用户接口  CLI 启动一个hive副本 ，JDBC 客户端-hiveserver ， WUI 浏览器访问hive 
 
@@ -38,24 +38,24 @@ select word ,count(*) from ( select explode(splite(sentence, ' ')) as word from 
 3 数据存贮  生成查询计划 有MR调用执行  
 
 
-#### hive 的内部表 和外部表
+## hive 的内部表 和外部表
 
 
-#### hive 中的 partition 
+## hive 中的 partition 
 table 拆分成 partition
 
 
-#### hive 中的 bucket 
+## hive 中的 bucket 
 partition 拆分成 bucket
 
 
-####  hive 中的数据类型 
+##  hive 中的数据类型 
 1 原生类型  int float double timestamp 。。。  
 
 2 复合类型  arrays
 
 
-#### hive 中和sql  和 map reduce ， join 的优化  
+## hive 中和sql  和 map reduce ， join 的优化  
 
 
 

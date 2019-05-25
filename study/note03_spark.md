@@ -10,18 +10,18 @@ task
 MR 调度慢 计算慢 一项任务需要多轮mr
 
 
-#### Driver Program
+## Driver Program
 spark核心组件
 构建SparkContext
 job转化DAG图 数据处理流程图
 DAG划分stage和tasks
 根据tash想RM 申请资源
 
-#### Executor
+## Executor
 真正执行task的单元 一个WorkNode上可以有多个Executor
 
 
-### 什么是spark 
+## 什么是spark 
 
 executor都是装载在container里运行，container默认内存是1G    
 executor分配的内存是executor-memory，想yarn申请的内存是（executor-memory + 1）*num -executors。  
@@ -33,7 +33,7 @@ Executor伴随整个app的生命周期
 线程池模型，省去进程频繁启停的开销  
 
 
-#### spark解决了什么问题
+## spark解决了什么问题
 最大化利用内存
 中间结果放内存加速迭代  
 某结果集放入内存，加速后续查询和处理，解决运行慢的问题  
@@ -43,7 +43,7 @@ Executor伴随整个app的生命周期
 完整的作业描述  
 
 
-#### spark 核心
+## spark 核心
 
 基于弹性分布式数据集 RDD 模型 具有良好的通用，容错 ，并行处理  
 
@@ -122,7 +122,7 @@ DAG是在计算过程中不断扩展的，在action后才会启动计算
 
 
 
-### spark 作业运行原理  
+## spark 作业运行原理  
 
 driver -》RM 申请资源 分配资源 -》 executor 执行task 
 
@@ -141,7 +141,7 @@ Task的执行速度和每个executor进程的CPU Core数量有直接关系，一
 
 
 
-### spark 调优
+## spark 调优
 
 rdd的调优
 
@@ -149,7 +149,7 @@ rdd的调优
 
 参数的设置
 
-### spark 技术栈
+## spark 技术栈
 
 hadoop 的 hdfs  
 
