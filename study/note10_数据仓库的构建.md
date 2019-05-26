@@ -52,19 +52,19 @@ dws - 业务部门 - 维度自定义标签 - 时间标签
 
 
 商品维度表 dim_fr_item  
+             
+|   |     |
+| ------  | -----    |
+| 基本属性 <br>外键关联  |  item_id  <br> item_title <br> shop_id   |
+| 时间 | ins <br> upd | 
+| 对于层级关系 星形  扁平化冗余 | level1 <br>  l2_id <br> l3_id |
+| 行为维度冗余 | item_sales_count_7days <br> item_sales_count_30days |
+| 不适合桥接的字段 | shop_content1 <br> shop_contetn2 |
+| 大字段，用于扩展的 | item_json_arrs <br> item_keyvalue_attrs |
+| 分区字段分库分表  | day |
 
-  
-|  基本属性   |     123 |  
- | sdfsd | daasd |
 
-
-
-
-
-
-
-
-
+销售事实表
 
 
 
